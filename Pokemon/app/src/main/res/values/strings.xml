@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="titleHeaderDescription">A kezdőképernyő headerje</string>
+    <string name="about">About</string>
+    <string name="about_text">Egy kicsi applikáció a mobilalkalmazásfejlesztés tárgyhoz.\n\n Az applikáció a pokemon api-t használja!</string>
+    <string name="start">Start</string>
+    <string name="navigate_add">NavigateAdd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="average_spawn">Average spawn:</string>
+    <string name="spawn_time">Spawn_time:</string>
+    <string name="candy">Candy:</string>
+    <string name="weight">Weight:</string>
+    <string name="candy_count">Candy count:</string>
+    <string name="egg">Egg:</string>
+    <string name="spawn_chance">Spawn chance:</string>
+    <string name="height">Height:</string>
+    <string name="img">Img:</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name:</string>
+    <string name="num">Number:</string>
+    <string name="clearall">Clear_All</string>
+    <string name="header_text">List of Pokemons</string>
+</resources>

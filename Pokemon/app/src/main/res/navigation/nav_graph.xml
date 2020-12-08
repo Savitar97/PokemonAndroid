@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.android.pokemon.title.TitleFragment"
+        android:label="Pokemon"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_pokedexFragment"
+            app:destination="@id/pokedexFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.android.pokemon.menuitem.AboutFragment"
+        android:label="Pokemon_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/pokedexFragment"
+        android:name="com.example.android.pokemon.pokedex.PokeDexFragment"
+        android:label="Poke_dex"
+        tools:layout="@layout/fragment_poke_dex" >
+        <action
+            android:id="@+id/action_pokedexFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_pokedexFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.android.pokemon.add.AddFragment"
+        android:label="Add_Pokemon"
+        tools:layout="@layout/fragment_add"
+        >
+        <action
+            android:id="@+id/action_addFragment_to_pokedexFragment"
+            app:destination="@id/pokedexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.android.pokemon.details.DetailsFragment"
+        android:label="Pokemon_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="pokemonID"
+            app:argType="long"/>
+    </fragment>
+
+</navigation>
